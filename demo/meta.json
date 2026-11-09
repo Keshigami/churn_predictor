@@ -1,0 +1,48 @@
+{
+ "folder": "portfolio/churn_predictor",
+ "slug": "portfolio__churn_predictor",
+ "port": 8111,
+ "title": "Telecom Churn Predictor",
+ "one_liner": "Scores a telecom customer's churn risk with a Logistic Regression and a Random Forest trained once on synthetic data, in a Streamlit dashboard.",
+ "duration_s": 49.5,
+ "highlight_s": 21.2,
+ "steps": [
+  {
+   "n": 1,
+   "text": "Telecom churn: logistic regression versus random forest on the held-out 20 percent",
+   "ok": true,
+   "t": 3.7
+  },
+  {
+   "n": 2,
+   "text": "Random forest feature importances and the logistic coefficients",
+   "ok": true,
+   "t": 9.5
+  },
+  {
+   "n": 3,
+   "text": "Score one customer: use the sample customer (short tenure, fiber, month-to-month)",
+   "ok": true,
+   "t": 15.3
+  },
+  {
+   "n": 4,
+   "text": "Predict: high risk of churn",
+   "ok": true,
+   "t": 20.2
+  },
+  {
+   "n": 5,
+   "text": "Now the safe customer: five years in, two-year contract, DSL",
+   "ok": true,
+   "t": 26.7
+  },
+  {
+   "n": 6,
+   "text": "Predict: low risk",
+   "ok": true,
+   "t": 32.0
+  }
+ ],
+ "skipped": []
+}

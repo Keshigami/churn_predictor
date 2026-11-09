@@ -1,0 +1,134 @@
+{
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.74,
+      "f1": 0.5806,
+      "roc_auc": 0.806,
+      "train_seconds": 0.017,
+      "single_prediction_ms": 1.68
+    },
+    "random_forest": {
+      "accuracy": 0.73,
+      "f1": 0.5424,
+      "roc_auc": 0.7868,
+      "train_seconds": 0.15,
+      "single_prediction_ms": 6.14
+    }
+  },
+  "n_train": 800,
+  "n_test": 200,
+  "feature_importances": {
+    "TotalCharges": 0.1551,
+    "Tenure": 0.1511,
+    "MonthlyCharges": 0.1415,
+    "Contract_Month-to-month": 0.1278,
+    "InternetService_Fiber optic": 0.0445,
+    "Contract_One year": 0.0408,
+    "Contract_Two year": 0.0388,
+    "SeniorCitizen": 0.0294,
+    "InternetService_No": 0.0236,
+    "PaymentMethod_Electronic check": 0.021,
+    "PaymentMethod_Credit card": 0.0205,
+    "PaymentMethod_Bank transfer": 0.0201,
+    "PaperlessBilling_No": 0.0199,
+    "PaperlessBilling_Yes": 0.0194,
+    "Gender_Male": 0.0193,
+    "Partner_No": 0.0193,
+    "InternetService_DSL": 0.0186,
+    "Dependents_No": 0.0185,
+    "Partner_Yes": 0.0184,
+    "Gender_Female": 0.018,
+    "PaymentMethod_Mailed check": 0.0172,
+    "Dependents_Yes": 0.0171
+  },
+  "lr_coefficients": {
+    "Tenure": -0.8012,
+    "MonthlyCharges": -0.0738,
+    "TotalCharges": 0.2152,
+    "SeniorCitizen": -0.1065,
+    "InternetService_DSL": -0.179,
+    "InternetService_Fiber optic": 0.4608,
+    "InternetService_No": -0.2825,
+    "Contract_Month-to-month": 0.7668,
+    "Contract_One year": -0.3852,
+    "Contract_Two year": -0.4019,
+    "PaymentMethod_Electronic check": 0.0465,
+    "PaymentMethod_Mailed check": -0.1068,
+    "PaymentMethod_Bank transfer": -0.1014,
+    "PaymentMethod_Credit card": 0.1553,
+    "PaperlessBilling_Yes": -0.0289,
+    "PaperlessBilling_No": 0.0289,
+    "Gender_Female": -0.0293,
+    "Gender_Male": 0.0293,
+    "Partner_Yes": 0.0293,
+    "Partner_No": -0.0293,
+    "Dependents_Yes": 0.0386,
+    "Dependents_No": -0.0386
+  },
+  "champion": "logistic_regression",
+  "training_stats": {
+    "Tenure": {
+      "mean": 35.34,
+      "std": 20.897832423483543
+    },
+    "MonthlyCharges": {
+      "mean": 70.09934310607802,
+      "std": 29.068799216996265
+    },
+    "TotalCharges": {
+      "mean": 2483.4180685485812,
+      "std": 1907.0283987306648
+    },
+    "SeniorCitizen": {
+      "mean": 0.5325,
+      "std": 0.4989426319728552
+    },
+    "InternetService": {
+      "frequencies": {
+        "DSL": 0.33875,
+        "Fiber optic": 0.33375,
+        "No": 0.3275
+      }
+    },
+    "Contract": {
+      "frequencies": {
+        "Month-to-month": 0.3575,
+        "One year": 0.32625,
+        "Two year": 0.31625
+      }
+    },
+    "PaymentMethod": {
+      "frequencies": {
+        "Credit card": 0.2775,
+        "Bank transfer": 0.27375,
+        "Electronic check": 0.2325,
+        "Mailed check": 0.21625
+      }
+    },
+    "PaperlessBilling": {
+      "frequencies": {
+        "No": 0.51125,
+        "Yes": 0.48875
+      }
+    },
+    "Gender": {
+      "frequencies": {
+        "Female": 0.515,
+        "Male": 0.485
+      }
+    },
+    "Partner": {
+      "frequencies": {
+        "Yes": 0.51375,
+        "No": 0.48625
+      }
+    },
+    "Dependents": {
+      "frequencies": {
+        "No": 0.52,
+        "Yes": 0.48
+      }
+    }
+  },
+  "churn_rate": 0.338
+}
